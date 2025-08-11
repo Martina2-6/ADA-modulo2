@@ -1,0 +1,39 @@
+
+
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 100px;
+    background-color: #ff0000;
+  }
+
+    h1 {
+      font-size: 120px;
+      font-weight: 900;
+    }
+
+    p {
+      font-size: 48px;
+      font-weight: 700;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Colores personalizados */
+    .nombre {
+      color: #ff2f00;
+    }
+
+    .programadora {
+      color: #0075ea;
+    }
+
+    .matematica {
+      color: #32CD32;
+    }
+
+    .guitarrista {
+      color: #800080;
+    }
+  
