@@ -1,0 +1,33 @@
+ body {
+      background-color: #b6d6ff;
+      color: #000000;
+      margin: 40px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 72px;
+    }
+
+    .autor {
+      font-size: 18px;
+      color: #00419b; /* gris */
+      margin-bottom: 20px;
+    }
+
+    .autor a {
+      color: #ff00b7; /* celeste */
+      text-decoration: none; /* sin subrayado */
+    }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .parrafo3 {
+      font-family: 'Roboto Slab', serif;
+      font-style: italic;
+    }

@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    width: fit-content;
+}
+
+/* Colores graduales */
+.t0 { background-color: rgb(0, 0, 255); }
+.t5 { background-color: rgb(51, 0, 204); }
+.t10 { background-color: rgb(102, 0, 153); }
+.t15 { background-color: rgb(153, 0, 102); }
+.t20 { background-color: rgb(204, 0, 51); }
+.t25 { background-color: rgb(255, 0, 0); }
+.t30 { background-color: rgb(255, 51, 0); }
+.t35 { background-color: rgb(255, 102, 0); }
+.t40 { background-color: rgb(255, 153, 0); }
+.t50 { background-color: rgb(255, 0, 0); }

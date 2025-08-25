@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f4f4;
+}
+
+.bandera {
+  width: 300px;
+  height: 200px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.franja {
+  flex: 1;
+}
+
+/* Argentina */
+.bandera-argentina .celeste { background: #74acdf; }
+.bandera-argentina .blanca { background: #ffffff; }
+
+/* Alemania */
+.bandera-alemania .negro { background: #000000; }
+.bandera-alemania .rojo { background: #dd0000; }
+.bandera-alemania .amarillo { background: #ffce00; }
+
+/* Francia */
+.bandera-francia {
+  flex-direction: row;
+}
+.bandera-francia .azul { background: #0055a4; }
+.bandera-francia .blanco { background: #ffffff; }
+.bandera-francia .rojo { background: #ef4135; }
+
+/* Italia */
+.bandera-italia {
+  flex-direction: row;
+}
+.bandera-italia .verde { background: #008c45; }
+.bandera-italia .blanco { background: #ffffff; }
+.bandera-italia .rojo { background: #cd212a; }
+
+/* México (solo franjas, sin escudo) */
+.bandera-mexico {
+  flex-direction: row;
+}
+.bandera-mexico .verde { background: #006847; }
+.bandera-mexico .blanco { background: #ffffff; }
+.bandera-mexico .rojo { background: #ce1126; }
+
+/* Holanda */
+.bandera-holanda .rojo { background: #ae1c28; }
+.bandera-holanda .blanco { background: #ffffff; }
+.bandera-holanda .azul { background: #21468b; }

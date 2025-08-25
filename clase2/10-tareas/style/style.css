@@ -1,0 +1,58 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #b6b1ff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+.tarea {
+    background-color: #fffaaf;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.fecha {
+    font-size: 14px;
+    color: #888; /* gris claro */
+    margin: 5px 0;
+}
+
+.estado {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Colores por estado */
+.pendiente {
+    background-color: rgb(255, 0, 238);
+}
+
+.haciendo {
+    background-color: rgb(255, 0, 111);
+}
+
+.hecha {
+    background-color: rgb(255, 101, 204);
+}
+
+.cancelada {
+    background-color: red;
+}

@@ -1,0 +1,45 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffed92;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+a {
+    color: #0000bb; /* azul */
+    text-decoration: none; /* sin subrayado */
+}
+
+.comentario {
+    background-color: rgb(255, 168, 118);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.fecha {
+    font-size: 14px;
+    color: #888; /* gris claro */
+    margin: 5px 0;
+}
+
+.reacciones {
+    margin-top: 10px;
+}
+
+.reacciones span {
+    background-color: #ddd; /* gris claro */
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-right: 5px;
+    display: inline-block;
+}

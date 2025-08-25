@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: pink;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background: purple;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+main {
+  background: white;
+  flex: 1;
+  padding: 10px;
+  display: flex;
+}
+
+aside {
+  background: violet;
+  padding: 10px;
+}
+
+footer {
+  background: plum;
+  padding: 10px;
+  text-align: center;
+}

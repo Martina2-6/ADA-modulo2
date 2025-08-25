@@ -1,0 +1,78 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f0f0f0;
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Todas las paletas en fila */
+.paleta-1, .paleta-2, .paleta-3, .paleta-4 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.color {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.color:hover {
+    transform: scale(1.1);
+}
+
+/* Paletas */
+.paleta-1 {
+    background-color: #fffba6;
+}
+.paleta-2 {
+    background-color: #b3ffa6;
+}
+.paleta-3 {
+    background-color: #ffb7df;
+}
+.paleta-4 {
+    background-color: #ffadad;
+}
+
+
+
+/* Colores */
+.color-1  { background-color: #ff2f00; }
+.color-2  { background-color: #33FF57; }
+.color-3  { background-color: #3357FF; }
+.color-4  { background-color: #FF00FF; }
+.color-5  { background-color: #FF33A1; }
+.color-6  { background-color: #33FFF5; }
+.color-7  { background-color: #F5FF33; }
+.color-8  { background-color: #FF8C33; }
+.color-9  { background-color: #33FF8C; }
+.color-10 { background-color: #8C33FF; }
+.color-11 { background-color: #FF3333; }
+.color-12 { background-color: #33FF33; }
+.color-13 { background-color: #3333FF; }
+.color-14 { background-color: #FF5733; }
+.color-15 { background-color: #33FF57; }
+.color-16 { background-color: #FF33F5; }
+
+
+
+
+
+

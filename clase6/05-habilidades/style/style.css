@@ -1,0 +1,88 @@
+/* Fondo con degradado */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #83ff8f, #377f1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor de la tarjeta */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tarjeta */
+.card {
+  background: #53ffce;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+/* Encabezado */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.view-btn {
+  border: 1px solid #ddd;
+  background: #ffff83;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #555;
+}
+
+.view-btn:hover {
+  background: #eee;
+}
+
+/* Cada curso */
+.course {
+  display: flex;
+  align-items: center;
+  background: #ffdba5;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #f0f0f0;
+}
+
+.course h3 {
+  font-size: 14px;
+  margin: 0;
+  color: #333;
+}
+
+.course p {
+  font-size: 12px;
+  margin: 3px 0 0;
+  color: #666;
+}
+
+/* Barra lateral de colores */
+.bar {
+  width: 5px;
+  height: 100%;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.pink { background: linear-gradient(180deg, #ff416c, #ff4b2b); }
+.purple { background: linear-gradient(180deg, #8e2de2, #4a00e0); }
+.orange { background: linear-gradient(180deg, #f7971e, #ffd200); }
