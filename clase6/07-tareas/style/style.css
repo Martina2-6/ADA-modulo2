@@ -1,0 +1,38 @@
+body {
+    background-color: #f19058;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 28px;
+}
+
+.task-list {
+    background-color: #ffecb3;
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.task-list h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: rgb(255, 156, 6);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.add-card {
+    color: #999;
+    font-style: italic;
+}
