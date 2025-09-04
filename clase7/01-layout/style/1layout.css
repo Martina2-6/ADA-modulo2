@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #71ff76;
+  padding: 20px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+main {
+  flex: 1;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1f9d00;
+    font-size: 30px;
+}
+
+footer {
+  background: #004201;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+

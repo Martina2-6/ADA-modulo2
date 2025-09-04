@@ -1,0 +1,139 @@
+:root{
+  --bg:#ffffff;
+  --ink:#0c0c0c;
+
+  /* paleta (parecida a la imagen) */
+  --alkali:#ff6b6b;
+  --alkaline:#ffb66b;
+  --transition:#ffe866;
+  --post:#ffd08a;
+  --metalloid:#7ee085;
+  --nonmetal:#62d0ff;
+  --halogen:#b689ff;
+  --noble:#bfbfbf;
+  --lanthanide:#ffa0a8;
+  --actinide:#ff9ad6;
+  --unknown:#d9d9d9;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:system-ui, -apple-system, "Segoe UI", Roboto, Poppins, sans-serif;
+  display:flex;
+  flex-direction:column;
+  gap:1.25rem;
+  padding:2rem 1rem 3rem;
+}
+
+.title{
+  text-align:center;
+  font-family:Poppins, system-ui, sans-serif;
+  font-weight:800;
+  font-size:clamp(2rem, 5vw, 4rem);
+  letter-spacing:.02em;
+}
+
+.periodic{
+  max-width:1200px;
+  margin-inline:auto;
+  display:flex;
+  flex-direction:column;
+  gap:.6rem;
+}
+
+.row{
+  display:grid;
+  grid-template-columns:repeat(18, 56px);
+  justify-content:center;
+  gap:.4rem;
+}
+
+.fblock{
+  grid-template-columns: 140px 1fr;
+  align-items:center;
+  gap:1rem;
+}
+.fblock .series{
+  display:grid;
+  grid-template-columns:repeat(15, 56px);
+  gap:.4rem;
+}
+
+.label{
+  font-weight:700;
+  opacity:.8;
+}
+
+.el{
+  width:56px; height:56px;
+  border-radius:10px;
+  box-shadow: 0 1px 0 rgba(0,0,0,.12), 0 6px 18px rgba(0,0,0,.08);
+  display:grid;
+  place-items:center;
+  font-weight:700;
+  font-size:1.05rem;
+  color:#0b0b0b;
+  user-select:none;
+}
+
+/* Colores por familia */
+.alkali{ background:var(--alkali); }
+.alkaline{ background:var(--alkaline); }
+.transition{ background:var(--transition); }
+.post{ background:var(--post); }
+.metalloid{ background:var(--metalloid); }
+.nonmetal{ background:var(--nonmetal); }
+.halogen{ background:var(--halogen); color:white; }
+.noble{ background:var(--noble); }
+.lanthanide{ background:var(--lanthanide); }
+.actinide{ background:var(--actinide); }
+.unknown{ background:var(--unknown); }
+
+/* “píldoras” que señalan bloque f en filas 6/7 */
+.tip{
+  position:relative;
+}
+.tip::after{
+  content:"↘";
+  position:absolute;
+  right:6px; bottom:2px;
+  font-size:.9rem; opacity:.55;
+}
+
+/* espaciadores invisibles para dibujar los huecos */
+.spacer{ visibility:hidden; }
+
+/* Leyenda */
+.legend{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  gap:.75rem 1.25rem;
+  align-items:center;
+  justify-content:center;
+  font-size:.95rem;
+}
+.legend .dot{
+  display:inline-block;
+  width:16px; height:16px;
+  border-radius:4px;
+  margin-right:.35rem;
+  vertical-align:middle;
+  box-shadow:0 1px 0 rgba(0,0,0,.12);
+}
+.legend .alkali{background:var(--alkali)}
+.legend .alkaline{background:var(--alkaline)}
+.legend .transition{background:var(--transition)}
+.legend .post{background:var(--post)}
+.legend .metalloid{background:var(--metalloid)}
+.legend .nonmetal{background:var(--nonmetal)}
+.legend .halogen{background:var(--halogen)}
+.legend .noble{background:var(--noble)}
+.legend .lanthanide{background:var(--lanthanide)}
+.legend .actinide{background:var(--actinide)}
+.legend .unknown{background:var(--unknown)}

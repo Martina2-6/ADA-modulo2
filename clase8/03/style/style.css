@@ -1,0 +1,76 @@
+/* Estilos básicos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+
+.header {
+  background: #320043;
+  padding: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.titulo-seccion {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Sección Proyectos */
+.proyectos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.proyecto {
+  background: #cce7f1;
+  border: 1px solid #f3caff;
+  border-radius: 8px;
+  width: calc(50% - 1rem);
+  padding: 1rem;
+  text-align: center;
+}
+
+.proyecto-imagen {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+/* Contacto */
+.contacto-datos {
+  list-style: none;
+  padding: 0;
+}
+
+.contacto-item {
+  margin-bottom: 0.5rem;
+}
+
+/* Pie de página */
+.footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 1rem;
+}

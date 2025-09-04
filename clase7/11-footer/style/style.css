@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #b3b3ba;
+}
+
+.footer {
+    background: rgb(193, 186, 239);
+    border-top: 2px solid #e6e6e6;
+    padding: 40px 60px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.logo h2 {
+    font-size: 2.5em;
+    color: #000000;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 6px;
+    cursor: pointer;
+
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+}
+
+.links div h3 {
+    font-size: 1em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    margin-bottom: 5px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #09003d;
+    font-size: 0.95em;
+}
+
+.links a:hover {
+    color: #04003f;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+    color: #2f2c69;
+}
+
+.legal a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #363074;
+}
+
+.legal a:hover {
+    color: #000;
+}
+
+.redes a {
+    margin: 0 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+}

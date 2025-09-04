@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #e9e9ff;
+  margin: 0;
+  padding: 2rem;
+}
+
+.articulos {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card {
+  background: rgb(233, 215, 255);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 1rem;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}

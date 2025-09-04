@@ -1,0 +1,30 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Arial, sans-serif;
+  background:#eaeaea;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+header, footer{
+  background:#444;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+.gallery{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  flex:1;
+  justify-content:center;
+  padding:20px;
+}
+.item{
+  background:#4a90e2;
+  color:#fff;
+  flex:1 1 calc(33% - 20px);
+  text-align:center;
+  padding:40px 0;
+  border-radius:8px;
+}

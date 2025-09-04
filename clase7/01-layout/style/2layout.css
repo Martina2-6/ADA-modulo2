@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #fbff00;
+  color: rgb(0, 0, 0);
+  padding: 25px;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  display: flex;
+}
+
+nav {
+  background: #ff5500;
+  width: 20%;
+  padding: 20px;
+    color: white;
+}
+
+section {
+  flex: 1;
+  background: #f0f0f0;
+  padding: 20px;
+    color: #8b0000;
+    font-size: 40px;
+}
+
+aside {
+  background: #8b0000;
+  width: 20%;
+  padding: 20px;
+    color: white;
+}
+
+footer {
+  background: #fff347;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px;
+}

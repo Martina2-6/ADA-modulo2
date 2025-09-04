@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabla Periódica (HTML + CSS)</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="title">TABLA PERIÓDICA</header>
+
+  <main class="periodic">
+    <!-- Fila 1 -->
+    <section class="row r1">
+      <div class="el nonmetal">H</div>
+      <div class="spacer" style="grid-column: span 16;"></div>
+      <div class="el noble">He</div>
+    </section>
+
+    <!-- Fila 2 -->
+    <section class="row r2">
+      <div class="el alkali">Li</div>
+      <div class="el alkaline">Be</div>
+      <div class="spacer" style="grid-column: span 10;"></div>
+      <div class="el metalloid">B</div>
+      <div class="el nonmetal">C</div>
+      <div class="el nonmetal">N</div>
+      <div class="el nonmetal">O</div>
+      <div class="el halogen">F</div>
+      <div class="el noble">Ne</div>
+    </section>
+
+    <!-- Fila 3 -->
+    <section class="row r3">
+      <div class="el alkali">Na</div>
+      <div class="el alkaline">Mg</div>
+      <div class="spacer" style="grid-column: span 10;"></div>
+      <div class="el post">Al</div>
+      <div class="el metalloid">Si</div>
+      <div class="el nonmetal">P</div>
+      <div class="el nonmetal">S</div>
+      <div class="el halogen">Cl</div>
+      <div class="el noble">Ar</div>
+    </section>
+
+    <!-- Fila 4 -->
+    <section class="row r4">
+      <div class="el alkali">K</div>
+      <div class="el alkaline">Ca</div>
+      <div class="el transition">Sc</div>
+      <div class="el transition">Ti</div>
+      <div class="el transition">V</div>
+      <div class="el transition">Cr</div>
+      <div class="el transition">Mn</div>
+      <div class="el transition">Fe</div>
+      <div class="el transition">Co</div>
+      <div class="el transition">Ni</div>
+      <div class="el transition">Cu</div>
+      <div class="el transition">Zn</div>
+      <div class="el post">Ga</div>
+      <div class="el metalloid">Ge</div>
+      <div class="el metalloid">As</div>
+      <div class="el nonmetal">Se</div>
+      <div class="el halogen">Br</div>
+      <div class="el noble">Kr</div>
+    </section>
+
+    <!-- Fila 5 -->
+    <section class="row r5">
+      <div class="el alkali">Rb</div>
+      <div class="el alkaline">Sr</div>
+      <div class="el transition">Y</div>
+      <div class="el transition">Zr</div>
+      <div class="el transition">Nb</div>
+      <div class="el transition">Mo</div>
+      <div class="el transition">Tc</div>
+      <div class="el transition">Ru</div>
+      <div class="el transition">Rh</div>
+      <div class="el transition">Pd</div>
+      <div class="el transition">Ag</div>
+      <div class="el transition">Cd</div>
+      <div class="el post">In</div>
+      <div class="el post">Sn</div>
+      <div class="el metalloid">Sb</div>
+      <div class="el metalloid">Te</div>
+      <div class="el halogen">I</div>
+      <div class="el noble">Xe</div>
+    </section>
+
+    <!-- Fila 6 -->
+    <section class="row r6">
+      <div class="el alkali">Cs</div>
+      <div class="el alkaline">Ba</div>
+      <div class="el lanthanide tip">La</div>
+      <div class="el transition">Hf</div>
+      <div class="el transition">Ta</div>
+      <div class="el transition">W</div>
+      <div class="el transition">Re</div>
+      <div class="el transition">Os</div>
+      <div class="el transition">Ir</div>
+      <div class="el transition">Pt</div>
+      <div class="el transition">Au</div>
+      <div class="el transition">Hg</div>
+      <div class="el transition">Tl</div>
+      <div class="el post">Pb</div>
+      <div class="el post">Bi</div>
+      <div class="el metalloid">Po</div>
+      <div class="el halogen">At</div>
+      <div class="el noble">Rn</div>
+    </section>
+
+    <!-- Fila 7 -->
+    <section class="row r7">
+      <div class="el alkali">Fr</div>
+      <div class="el alkaline">Ra</div>
+      <div class="el actinide tip">Ac</div>
+      <div class="el transition">Rf</div>
+      <div class="el transition">Db</div>
+      <div class="el transition">Sg</div>
+      <div class="el transition">Bh</div>
+      <div class="el transition">Hs</div>
+      <div class="el unknown">Mt</div>
+      <div class="el unknown">Ds</div>
+      <div class="el unknown">Rg</div>
+      <div class="el unknown">Cn</div>
+      <div class="el unknown">Nh</div>
+      <div class="el unknown">Fl</div>
+      <div class="el unknown">Mc</div>
+      <div class="el unknown">Lv</div>
+      <div class="el unknown">Ts</div>
+      <div class="el noble">Og</div>
+    </section>
+
+    <!-- Bloque f: Lantánidos -->
+    <section class="row fblock">
+      <div class="label">Lantánidos</div>
+      <div class="series">
+        <div class="el lanthanide">La</div>
+        <div class="el lanthanide">Ce</div>
+        <div class="el lanthanide">Pr</div>
+        <div class="el lanthanide">Nd</div>
+        <div class="el lanthanide">Pm</div>
+        <div class="el lanthanide">Sm</div>
+        <div class="el lanthanide">Eu</div>
+        <div class="el lanthanide">Gd</div>
+        <div class="el lanthanide">Tb</div>
+        <div class="el lanthanide">Dy</div>
+        <div class="el lanthanide">Ho</div>
+        <div class="el lanthanide">Er</div>
+        <div class="el lanthanide">Tm</div>
+        <div class="el lanthanide">Yb</div>
+        <div class="el lanthanide">Lu</div>
+      </div>
+    </section>
+
+    <!-- Bloque f: Actínidos -->
+    <section class="row fblock">
+      <div class="label">Actínidos</div>
+      <div class="series">
+        <div class="el actinide">Ac</div>
+        <div class="el actinide">Th</div>
+        <div class="el actinide">Pa</div>
+        <div class="el actinide">U</div>
+        <div class="el actinide">Np</div>
+        <div class="el actinide">Pu</div>
+        <div class="el actinide">Am</div>
+        <div class="el actinide">Cm</div>
+        <div class="el actinide">Bk</div>
+        <div class="el actinide">Cf</div>
+        <div class="el actinide">Es</div>
+        <div class="el actinide">Fm</div>
+        <div class="el actinide">Md</div>
+        <div class="el actinide">No</div>
+        <div class="el actinide">Lr</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="legend">
+    <span class="dot alkali"></span> Alcalinos
+    <span class="dot alkaline"></span> Alcalinotérreos
+    <span class="dot transition"></span> Metales de transición
+    <span class="dot post"></span> Otros metales
+    <span class="dot metalloid"></span> Metaloides
+    <span class="dot nonmetal"></span> No metales
+    <span class="dot halogen"></span> Halógenos
+    <span class="dot noble"></span> Gases nobles
+    <span class="dot lanthanide"></span> Lantánidos
+    <span class="dot actinide"></span> Actínidos
+    <span class="dot unknown"></span> Sintéticos/Desconocidos
+  </footer>
+</body>
+</html>
+
