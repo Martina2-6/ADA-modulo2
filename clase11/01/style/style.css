@@ -1,0 +1,45 @@
+/* Fuente y medidas base */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em; /* base para medidas relativas */
+  line-height: 1.6;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Contenedor centrado */
+.contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Breakpoint para tipografía responsive */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.2em; /* todos los tamaños escalan porque usan em */
+  }
+}

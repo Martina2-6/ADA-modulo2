@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+    background: #d0fdc8;
+    color: #000000;
+
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+.encabezado {
+  background: #317230;
+  color: #fff;
+  padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: #ffffff 2px solid;
+}
+
+.encabezado h1 {
+  margin: 0;
+  text-align: center;
+  font: 3em sans-serif;
+
+}
+
+.navegacion ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.navegacion a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+/* Secciones */
+section {
+  padding: 2rem 0;
+}
+
+.beneficios .grid,
+.equipo .grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.beneficios article,
+.equipo article {
+  flex: 1 1 calc(33.33% - 1rem);
+  background: #b8e26a;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  border: #ffffff 2px solid;
+}
+
+.beneficios img,
+.equipo img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Pie de página */
+.pie {
+  background: #0f320c;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+p
+{
+    font-size: 1.2em;
+    margin: 0.5rem 0;
+    text-align: center
+}

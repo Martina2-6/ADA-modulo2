@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Card de producto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+<main class="wrapper">
+<article class="product-card" role="article" aria-labelledby="product-title">
+<figure class="product-media">
+<img src="https://res.cloudinary.com/prvnbist/image/upload/v1508603573/helmet.png" alt="Casco Stormtrooper blanco" class="product-image" />
+</figure>
+
+
+<section class="product-info">
+<header class="product-header">
+<h1 id="product-title" class="product-name">STORMTROOPER <span>HELMET</span></h1>
+<ul class="tag-list" aria-label="Categorías">
+<li class="tag">STAR WARS</li>
+<li class="tag">MERCHANDISING</li>
+<li class="tag">SCI‑FI</li>
+</ul>
+</header>
+
+
+<div class="product-section">
+<h2 class="section-title">Descripción</h2>
+<p class="product-description">
+Réplica de coleccionista fabricada en ABS de alta resistencia. Interior acolchado y correa ajustable. Ideal para cosplay y exhibición.
+</p>
+</div>
+
+
+<div class="product-section price-row" aria-live="polite">
+<h2 class="section-title">Precio</h2>
+<p class="product-price" data-price="$1.299,99">$1.299,99</p>
+</div>
+
+
+<div class="product-actions">
+<button class="btn btn-primary" type="button" aria-label="Agregar al carrito">Comprar</button>
+<button class="btn btn-outline" type="button" aria-label="Agregar a favoritos" title="Agregar a favoritos">❤</button>
+</div>
+</section>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto - Tienda</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <h1>🞗🞘⬩Mi Tienda⬩🞘🞗</h1>
+      <nav class="navegacion">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Catálogo</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de producto -->
+  <main class="producto">
+    <div class="contenedor producto-detalle">
+      <div class="producto-imagen">
+        <img src="https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwd59886fc/products/NIDM9538-600/NIDM9538-600-1.JPG" alt="Producto ejemplo">
+      </div>
+      <div class="producto-info">
+        <h2>Zapatillas Nike Air Mujer,Rosa.</h2>
+        <p class="precio">$199,99</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt lorem ac urna ultrices, ut fringilla elit vestibulum.</p>
+
+        <!-- Selección de talla -->
+        <label for="talla">Talla:</label>
+        <select id="talla" name="talla">
+          <option>Pequeña</option>
+          <option>Mediana</option>
+          <option>Grande</option>
+          <option>Extra Grande</option>
+        </select>
+
+        <!-- Cantidad -->
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="99">
+
+        <!-- Botones -->
+        <div class="acciones">
+          <button>Añadir al carrito</button>
+          <button class="comprar">Comprar ahora</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reseñas -->
+    <section class="reseñas contenedor">
+      <h3>🞗🞘⬩Opiniones de Clientes⬩🞘🞗</h3>
+      <article class="reseña">
+        <h4> ✆ Magaly Reynoso <span>- 26 Marzo 2025</span></h4>
+        <p>⭐⭐⭐⭐⭐ "5"</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+      <article class="reseña">
+        <h4> ✆ Franco Galvan <span>- 12 Marzo 2025</span></h4>
+        <p>⭐⭐⭐⭐ "4"</p>
+        <p>Aliquam erat volutpat. Curabitur non nulla sit amet nisl tempus convallis.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <div class="contenedor">
+      <p>&copy; 2025 Mi Tienda. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

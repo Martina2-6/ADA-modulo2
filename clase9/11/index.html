@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Creativa</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <h1>Mi Sitio Creativo</h1>
+      <nav class="navegacion">
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Hero -->
+  <section class="hero">
+    <div class="contenedor">
+      <h2>Bienvenido a Nuestro Sitio</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="#servicios" class="boton">Ver más</a>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="servicios">
+    <div class="contenedor">
+      <h2>Nuestros Servicios</h2>
+      <div class="grid">
+        <article>
+          <h3>Diseño Web</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Marketing Digital</h3>
+          <p>Nullam sed facilisis dui. Cras ullamcorper, ligula et blandit finibus.</p>
+        </article>
+        <article>
+          <h3>Consultoría</h3>
+          <p>Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portafolio -->
+  <section id="portafolio" class="portafolio">
+    <div class="contenedor">
+      <h2>Proyectos Recientes</h2>
+      <div class="grid">
+        <img src="https://th.bing.com/th/id/R.b25136f8077b9d4b265a2b8b02d9bb03?rik=hGiJuVPb4ChjOQ&riu=http%3a%2f%2fwww.nonfictiongaming.com%2fwp-content%2fuploads%2f2014%2f09%2fminecraft.jpg&ehk=inPxiQLBJ1J9Y4lvh1CxX%2fK0Vculskpfpm2%2fOshiSCM%3d&risl=&pid=ImgRaw&r=0" alt="Proyecto 1">
+        <img src="https://m.media-amazon.com/images/I/A1SpBj031LL.jpg" alt="Proyecto 2">
+        <img src="https://charliecustard.com/wp-content/uploads/edd/2024/04/minecraft-starter-house-66-tutorial-4.png" alt="Proyecto 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <div class="contenedor">
+      <h2>Contáctanos</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <div class="contenedor">
+      <p>&copy; 2025 Mi Sitio Creativo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

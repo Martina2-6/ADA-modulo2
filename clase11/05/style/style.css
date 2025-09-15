@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Bloques */
+header,
+nav,
+main,
+aside,
+footer {
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Colores para diferenciar */
+header { background: #4a90e2; }
+nav { background: #50e3c2; }
+main { background: #7ed321; }
+aside { background: #f5a623; }
+footer { background: #d0021b; }
+
+/* Layout principal */
+.container {
+  display: flex;
+  flex: 1;
+}
+
+nav {
+  flex: 1;
+}
+
+.container-inner {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-content {
+  display: flex;
+  flex: 1;
+}
+
+main {
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+}
+
+footer {
+  margin-top: 1em;
+}
+
+/* --- Breakpoints --- */
+
+/* Tablets: nav arriba, main y aside en columnas */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container-content {
+    flex-direction: column;
+  }
+
+  main, aside {
+    flex: unset;
+  }
+}
+
+/* Móviles: reducimos fuente */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9em;
+  }
+}

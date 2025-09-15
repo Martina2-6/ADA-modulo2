@@ -1,0 +1,63 @@
+/* ==== RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ==== HEADER ==== */
+.header {
+  background-color: #ec8c8c;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #a80000;
+}
+
+.icono-menu {
+  display: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+
+  .icono-menu {
+    display: block;
+  }
+}

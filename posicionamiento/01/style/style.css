@@ -1,0 +1,43 @@
+.container {
+    width: 630px;
+    height: 450px;
+    border: 1px solid;
+    padding: 10px;
+    margin: 100px auto;
+    position: relative; /* importante para que los hijos con position:absolute se ubiquen dentro */
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute; /* permite mover cada caja dentro del contenedor */
+}
+
+.one {
+    background-color: darkgoldenrod;
+    top: 0;
+    left: 0;
+}
+
+.two {
+    background-color: darkcyan;
+    top: 80px;
+    left: 80px;
+}
+
+.three {
+    background-color: darkolivegreen;
+    top: 160px;
+    left: 160px;
+}
+
+.four {
+    background-color: darkred;
+    top: 250px;
+    left: 250px;
+}

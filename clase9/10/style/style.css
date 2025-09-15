@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+    background: #ffcfe2;
+    color: #000000;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+.encabezado {
+  background: #850056;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.encabezado h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.navegacion ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.navegacion a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+/* Producto */
+.producto-detalle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.producto-imagen,
+.producto-info {
+  flex: 1 1 45%;
+}
+
+.producto-imagen img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.producto-info .precio {
+  font-size: 3.5rem;
+  color: #0a9600;
+}
+
+.acciones {
+  margin-top: 1rem;
+}
+
+.acciones button {
+  background: #5c2d41;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.acciones .comprar {
+  background: #dd1313;
+    border-radius: 8px;
+    border: #000000 2px solid;
+    font-size: 1.2rem;
+}
+
+/* Reseñas */
+.reseñas {
+  margin: 2rem 0;
+}
+
+.reseña {
+  border-bottom: 1px solid #cd0074;
+  padding: 1rem 0;
+
+}
+
+/* Pie de página */
+.pie {
+  background: #370827;
+  color: #ef8eb9;
+  text-align: center;
+  padding: 1rem 0;
+}

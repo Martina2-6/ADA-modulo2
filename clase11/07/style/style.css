@@ -1,0 +1,58 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #000000;
+  color: #f3d8ff;
+}
+
+/* Contenedor central */
+.contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Grilla */
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em; /* espacio entre imágenes */
+  margin-top: 2em;
+}
+
+.grilla img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  border: #4d4d4d 2px solid;
+}
+
+/* --- Breakpoints --- */
+
+/* 3 columnas */
+@media (max-width: 900px) {
+  .grilla {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 2 columnas */
+@media (max-width: 600px) {
+  .grilla {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1 columna */
+@media (max-width: 400px) {
+  .grilla {
+    grid-template-columns: 1fr;
+  }
+}

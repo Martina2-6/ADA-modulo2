@@ -1,0 +1,80 @@
+/* Fuente general */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em; /* Base */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #ffbebe;
+  color: #000000;
+}
+
+/* Contenedor central */
+.contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  background: #ff7ab2;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+    color: #960037;
+}
+
+/* Párrafos */
+p {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+/* Link */
+a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para cada post */
+.post {
+  border-bottom: 1px solid #ddd;
+  padding: 1em 0;
+}
+
+/* --- Breakpoints --- */
+
+/* Pantallas medianas */
+@media (max-width: 900px) {
+  body {
+    font-size: 0.9em;
+  }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+h2 {
+  font-size: 2.2em;
+  margin-bottom: 0.3em;
+  color: #ff0374;
+}
+h4 {
+  font-size: 2.0em;
+  margin-bottom: 0.5em;
+  color: #950037;
+  text-align: center;
+}
