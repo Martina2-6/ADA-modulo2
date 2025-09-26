@@ -19,6 +19,4 @@ El Integrador esta incluido que es un Portafolio,en donde muestro mis habilidade
 ---
 
 ## 📂 Instalación / Uso
-1. Clonar el repositorio:
-   ```bash
- https://github.com/Martina2-6/ADA-modulo2.git
+1.https://github.com/Martina2-6/ADA-modulo2.git
