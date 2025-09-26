@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-gap: 20px;
+}
+
+.caja {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: lightgray;
+}
+
+.rojo {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: red;
+}
+
+.verde {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: green;
+}
+
+/* Posiciones */
+.arriba-izq { top: 0; left: 0; }
+.arriba-der { top: 0; right: 0; }
+.abajo-izq { bottom: 0; left: 0; }
+.abajo-der { bottom: 0; right: 0; }
+.centro { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.centro-abajo { bottom: 0; left: 50%; transform: translateX(-50%); }
+.abajo-centro { bottom: 0; left: 50%; transform: translate(-50%, 0); }

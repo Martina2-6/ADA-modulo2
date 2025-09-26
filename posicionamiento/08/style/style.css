@@ -1,0 +1,54 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  position: relative;
+  padding: 15px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Submenú oculto */
+.sub-menu-oculto {
+  display: none;
+  position: absolute;
+  top: 100%; /* se ubica debajo del padre */
+  left: 0;
+  background-color: black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 150px;
+}
+
+.sub-menu-oculto li {
+  padding: 10px;
+  color: white;
+}
+
+.sub-menu-oculto li:hover {
+  background-color: #333;
+}
+
+/* Mostrar submenú al pasar el mouse */
+.sub-menu:hover .sub-menu-oculto {
+  display: block;
+}

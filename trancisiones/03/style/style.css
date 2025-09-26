@@ -1,0 +1,162 @@
+/* latin */
+@font-face {
+  font-family: 'Cedarville Cursive';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/cedarvillecursive/v18/yYL00g_a2veiudhUmxjo5VKkoqA-B_nuIrpw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Reset básico */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:
+    linear-gradient(180deg, #f7f3ef 0%, #efe9e1 100%);
+  -webkit-font-smoothing: antialiased;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Contenedor principal */
+.board-wrap {
+  width: min(1200px, 96%);
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,0.6), transparent 10%),
+    linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.85));
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(34,34,34,0.15);
+  border: 1px solid rgba(34,34,34,0.06);
+}
+
+/* Header */
+.board-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.board-header h1 {
+  font-size: 28px;
+  letter-spacing: 0.6px;
+}
+.subtitle {
+  color: #181a3b;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+/* Tablero / grid libre */
+.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 26px;
+  padding: 12px;
+  align-items: start;
+}
+
+/* Polaroid base */
+.polaroid {
+  background: rgb(193, 194, 255);
+  width: 100%;
+  max-width: 240px;
+  margin: 0 auto;
+  border-radius: 6px;
+  padding: 12px 12px 18px 12px;
+  box-shadow: 0 10px 20px rgba(20,20,20,0.12);
+  transform-origin: center;
+  transition: transform 250ms cubic-bezier(.2,.9,.2,1), box-shadow 200ms;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Imagen dentro de la polaroid */
+.polaroid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+/* Pie de foto */
+.polaroid figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  padding-left: 6px;
+}
+
+/* Título con la tipografía cursiva */
+.polaroid .title {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 20px;
+  color: #000000;
+  line-height: 1;
+}
+
+/* Meta información en sans */
+.polaroid .meta {
+  font-size: 12px;
+  color: #4f3ed0;
+}
+
+/* Hover: levanta y rota suavemente la polaroid */
+.polaroid:hover {
+  transform: translateY(-8px) scale(1.03) rotate(0deg);
+  box-shadow: 0 18px 36px rgba(20,20,20,0.18);
+  z-index: 10;
+}
+
+/* Pequeños "pin" decorativos usando pseudo-elementos */
+.polaroid::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  left: 12px;
+  top: -6px;
+  background: linear-gradient(180deg,#fff,#e6e6e6);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transform: rotate(20deg);
+  opacity: 0.95;
+}
+
+/* Variaciones de rotación para aspecto "desordenado" */
+.r1 { transform: rotate(-6deg); }
+.r2 { transform: rotate(4deg); }
+.r3 { transform: rotate(-3deg); }
+.r4 { transform: rotate(6deg); }
+.r5 { transform: rotate(-9deg); }
+.r6 { transform: rotate(3deg); }
+
+/* Al pasar el cursor sobre la carta, anulamos la rotación ligeramente para que se enderece */
+.r1:hover, .r2:hover, .r3:hover, .r4:hover, .r5:hover, .r6:hover {
+  transform: translateY(-8px) scale(1.03) rotate(0deg);
+}
+
+/* Responsive: en pantallas pequeñas apilamos con menos separación */
+@media (max-width: 720px) {
+  .board {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .polaroid { max-width: 100%; }
+}
+
+/* Footer */
+.board-footer {
+  margin-top: 18px;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}

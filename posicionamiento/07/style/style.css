@@ -1,0 +1,47 @@
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+    padding-top: 60px; /* espacio para el header fijo */
+
+    background: #f0f4ff;
+
+}
+
+/* Header fijo */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #4a8bcc;
+  padding: 15px 20px;
+  z-index: 1000; /* se asegura de quedar por encima */
+}
+
+/* Menú */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: flex-end; /* hacia la derecha */
+}
+
+/* Items en línea */
+nav ul li {
+  margin-left: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hover opcional */
+nav ul li:hover {
+  text-decoration: underline;
+}
+section {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}

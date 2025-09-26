@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Efectos de botones — Ejemplos</title>
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Ejemplos: efectos de botones</h1>
+      <p class="lead">3 efectos tomados como inspiración: <strong>Subtle pill</strong>, <strong>Icon reveal</strong> y <strong>3D press</strong>.</p>
+    </header>
+
+    <section class="examples" aria-label="Ejemplos de botones">
+      <!-- 1) Subtle pill / btn-1 -->
+      <div class="example">
+        <h2>Subtle pill</h2>
+        <button class="btn btn-1" aria-pressed="false">Button</button>
+      </div>
+
+      <!-- 2) Icon reveal / btn-3 -->
+      <div class="example">
+        <h2>Icon reveal</h2>
+        <button class="btn btn-3" aria-label="Añadir al carrito">
+          <span class="btn-inner">Add to cart</span>
+          <span class="btn-icon" aria-hidden="true">🛒</span>
+        </button>
+      </div>
+
+      <!-- 3) 3D press / btn-8 -->
+      <div class="example">
+        <h2>3D press</h2>
+        <button class="btn btn-8" id="btn-3d" type="button">3D Button</button>
+      </div>
+    </section>
+
+    <footer>
+      <small>Hecho como ejemplo —</small>
+    </footer>
+  </main>
+
+  <script>
+    // Efecto click: añade clase temporal para animación (similar al original)
+    document.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.add('btn-activated');
+        setTimeout(() => btn.classList.remove('btn-activated'), 600);
+      });
+    });
+
+    // Mejora accesibilidad: toggle aria-pressed on btn-1
+    const b1 = document.querySelector('.btn-1');
+    if (b1) {
+      b1.addEventListener('click', () => {
+        const state = b1.getAttribute('aria-pressed') === 'true';
+        b1.setAttribute('aria-pressed', String(!state));
+      });
+    }
+  </script>
+</body>
+</html>

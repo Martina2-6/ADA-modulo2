@@ -1,0 +1,97 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #d0e6ff;
+  color: #000000;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Cada vista */
+.view {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(107, 255, 125, 0.411);
+}
+
+.view img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Máscara */
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.512);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.5s ease;
+}
+
+.mask h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.mask p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.mask .info {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #f6616d;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.mask .info:hover {
+  background: #68cb72;
+}
+
+/* Hover */
+.view:hover img {
+  transform: scale(1.4);
+}
+
+.view:hover .mask {
+  opacity: 1;
+  transform: translateY(0);
+}

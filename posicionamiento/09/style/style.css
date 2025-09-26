@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  background: white;
+  padding: 135px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(8, 0, 255);
+  width: 320px;
+}
+
+.form-group {
+  position: center;
+  margin-bottom: 30px;
+}
+
+.form-group i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Ícono de validación a la derecha (oculto por defecto) */
+.valid-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: green;
+  display: none;
+}
+
+/* Mostrar ícono solo si el input es válido */
+.form-group input:valid + .valid-icon {
+  display: block;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}

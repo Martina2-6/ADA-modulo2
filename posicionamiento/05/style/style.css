@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background: #d4d4fe;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.perfil {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bandera {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+  width: 40px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.info strong {
+  color: #000;
+}

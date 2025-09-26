@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff2ea5;
+  padding: 10px 20px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icono {
+  position: relative;
+  font-size: 24px;
+  color: white;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: rgb(255, 182, 221);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 3px 6px;
+  min-width: 18px;
+  text-align: center;
+}

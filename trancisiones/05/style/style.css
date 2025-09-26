@@ -1,0 +1,96 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 40px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Figura */
+.grid figure {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.grid figure img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Caption oculto inicialmente */
+.grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.grid figcaption h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.grid figcaption span {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.grid figcaption a {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #ff4757;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.grid figcaption a:hover {
+  background: #e84118;
+}
+
+/* Hover effect */
+.grid figure:hover img {
+  transform: scale(1.2);
+}
+
+.grid figure:hover figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
